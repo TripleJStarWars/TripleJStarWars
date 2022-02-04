@@ -9,3 +9,33 @@ player.say(text);
 text+= " A really long jump";
 
 player.say(text);
+ 
+ //Here we have created a variable called num
+ let num
+
+ num = 24;
+
+ //Multiply by 20
+num = num * 20;
+ //divide by 40
+num = num / 40;
+ //Add 100
+ num = num + 100
+// Minus 6520
+num = num - 6520
+ player.say("the ending number is: " + num);
+  
+  // If is the variable for logic//
+
+
+If(num < 0 ) {
+    player.say("The Number is Negative")
+}else{
+    player.say("The Number is Positive")
+}
+
+If(num > 0 ){
+    player.say("The Number is Negative")
+}
+
+//If and Else are the two main words of logic//
