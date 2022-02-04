@@ -1,0 +1,11 @@
+let text;
+
+text = "A really big jump";
+
+text = "A really Small jump ";
+
+player.say(text);
+
+text+= " A really long jump";
+
+player.say(text);
