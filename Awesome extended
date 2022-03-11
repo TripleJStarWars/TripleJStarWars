@@ -1,7 +1,3 @@
-let myPosition = positions.groundPosition(pos(0, 0, 0));
-player.say(myPosition);
-player.say(positions.add(myPosition, pos(1, 1, 10)));
-
 let width = 6;
 let height = 6;
 let length = 6;
@@ -9,6 +5,9 @@ let length = 6;
 //get the current position//
 
 player.onChat("build", function () {
+    //Jesse fixed the problem//
+    let myPosition = positions.groundPosition(pos(0, 0, 0));
+player.say(myPosition);
 player.say("Start Placing Stone");
     for (let x =1; x <width; x++){
         for (let y =1; y <height; y++){
@@ -22,5 +21,3 @@ player.say("Start Placing Stone");
     }
 player.say("done placing stones!")
 })
-
-
