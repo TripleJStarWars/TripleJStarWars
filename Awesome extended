@@ -21,3 +21,33 @@ player.say("Start Placing Stone");
     }
 player.say("done placing stones!")
 })
+
+
+
+
+
+
+
+let width = 6;
+let height = 6;
+let length = 6;
+let newBlocks = [1,2,3,4,5,];
+//get the current position//
+let Build = [57,19,34,207,642]
+player.onChat("Build", function () {
+    //Jesse fixed the problem//
+    let myPosition = positions.groundPosition(pos(0, 0, 0));
+player.say(myPosition);
+player.say("Start Placing Stone");
+    for (let x =1; x <width; x++){
+        for (let y =1; y <height; y++){
+            for (let z =1; z <length; z++){
+        let newPos = positions.add(myPosition, pos(x, y, z));
+        player.say(" My Position "+myPosition.toString() +" New " + newPos.toString() + " Cords " + newPos + " XYZ " + newPos.getValue(Axis.X)+" " + newPos.getValue(Axis.Y) + " " + newPos.getValue(Axis.Z) );
+        blocks.place(, world(newPos.getValue(Axis.X) ,
+        newPos.getValue(Axis.Y), newPos.getValue(Axis.Z)));
+            }
+        }
+    }
+player.say("done placing stones!")
+})
