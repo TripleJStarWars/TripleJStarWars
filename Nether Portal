@@ -1,11 +1,38 @@
-player.onChat("run", function () {
-blocks.testForBlock(OBSIDIAN, pos(x, y, z))
+player.onChat("Go", function () {
+
+while (OBSIDIAN = false){
+    checkBlock
+}getNextBlock
 
 
-//for (let x =1; x <6; x++){
-//for (let y =1; y <6; y++){
-//for (let z =1; z <6; z++){
-//blocks.place(BEDROCK, pos(x, y, z));
 
 
-})
+
+for (let x =1; x <999999999999999999999999999999999999999; x++){
+for (let y =1; y <999999999999999999999999999999999999999; y++){
+for (let z =1; z <999999999999999999999999999999999999999; z++){
+
+ blocks.testForBlock(OBSIDIAN, pos(x, y, z))
+
+player.say("Detection complete!")
+}
+}
+}
+
+//myPosition.getValue(Axis.X)
+//agent.teleport(pos(0,0,0), WEST)
+
+//CheckBlocks(x, y, z,)
+//get next block function (x,y,z)
+}
+)
+
+
+function checkBlocks(){
+
+}
+
+
+function getNextBlock(){
+    
+}
