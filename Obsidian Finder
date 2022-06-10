@@ -1,0 +1,28 @@
+let FoundObsidian = false;
+
+function checkABlock (positionToCheck = new Position) {
+    player.say("Detection starting " + positionToCheck)
+                return blocks.testForBlock(OBSIDIAN, positionToCheck)
+;
+
+}
+player.onChat("Go", function () {
+
+    player.say("Starting to look for obsidian")
+    while (FoundObsidian == false) {
+        player.say("Not found yet")
+        for(let x =0; x <10000; x++){
+            for(let y =0; y <10000; y++){
+                for(let z =0; z <10000; z++){
+                    player.say("About to check");
+                    if (checkABlock(pos(x,y,z)) == true){
+                    FoundObsidian = true;
+                    player.say("Found it!");
+                    break;
+                    }
+                }
+            }
+        }
+    }
+}
+)
